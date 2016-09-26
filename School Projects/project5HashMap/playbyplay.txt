@@ -1,0 +1,114 @@
+A Mario 1-3
+A Mario 2-3
+A Mario 3u
+A Mario 3-1
+A Mario 3-4
+A Mario 4-3
+A Mario 5-3
+A Mario 6-3
+A Mario 7-3
+A Mario 8-3
+A Mario P1
+A Mario P2
+A Mario P3
+A Mario P4
+A Mario P5
+A Mario P6
+A Mario F7
+A Mario F8
+A Mario F9
+A Mario DP
+A Mario FC
+
+
+A Mario K
+
+
+A Mario 1B
+A Mario 2B
+A Mario 3B
+A Mario HR
+
+
+A Mario BB
+
+
+A Mario S1
+A Mario S2
+A Mario S3
+A Mario S5
+A Mario SF7
+A Mario SF8
+A Mario SF9
+
+
+A Mario HBP
+
+
+A Mario E1
+A Mario E2
+A Mario E3
+A Mario E4
+A Mario E5
+A Mario E6
+A Mario E7
+A Mario E8
+A Mario E9
+
+H Meng 1-3
+H Meng 2-3
+H Meng 3u
+H Meng 3-1
+H Meng 3-4
+H Meng 4-3
+H Meng 5-3
+H Meng 6-3
+H Meng 7-3
+H Meng 8-3
+H Meng P1
+H Meng P2
+H Meng P3
+H Meng P4
+H Meng P5
+H Meng P6
+H Meng F7
+H Meng F8
+H Meng F9
+H Meng DP
+H Meng FC
+
+
+H Meng K
+
+
+H Meng 1B
+H Meng 2B
+H Meng 3B
+H Meng HR
+
+
+H Meng BB
+
+
+H Meng S1
+H Meng S2
+H Meng S3
+H Meng S5
+H Meng SF7
+H Meng SF8
+H Meng SF9
+
+
+H Meng HBP
+H Meng HBP
+H Meng HBP
+
+H Meng E1
+H Meng E2
+H Meng E3
+H Meng E4
+H Meng E5
+H Meng E6
+H Meng E7
+H Meng E8
+H Meng E9

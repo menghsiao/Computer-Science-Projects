@@ -1,0 +1,38 @@
+Player Name         At-bats   Hits      Walks     Strikeouts     Hits by pitch       Sacrifices     Batting average     On-base percentage
+Mario               35        4         1         1              1                   7              0.114               0.136     
+
+Meng                35        4         1         1              3                   7              0.114               0.174     
+
+LEADERS
+BATTING AVERAGE (BA)
+0.114     	Mario
+, Meng
+
+
+ON-BASE PERCENTAGE (OB%)
+0.174     	Meng
+
+0.136     	Mario
+
+
+HITS (H)
+4         	Meng
+, Mario
+
+
+WALKS (BB)
+1         	Meng
+, Mario
+
+
+STRIKEOUTS (K)
+1         	Meng
+, Mario
+
+
+HIT BY PITCH (HBP)
+3         	Meng
+
+1         	Mario
+
+

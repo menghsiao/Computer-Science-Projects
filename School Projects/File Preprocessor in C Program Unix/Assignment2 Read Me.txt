@@ -1,0 +1,57 @@
+Student Name:  Meng Hsiao (mxh126730)
+
+**This is my second attemp submitting this program.  
+The only thing different from the first one is that I output the fail to open file message to std error now instead of to the file.
+
+Describing the structure and function of this program:
+
+
+This assignment is to write a 'C' program that performs some functions of a file processor.
+This is only one .c file.  It has many functions including one main() function to execute the program.
+
+*****	The struct tm *feb4 has been initialized to localtime. <time> will displace the difference in seconds between now and Feb 4th, 2016 5:30 PM.
+*****	It will also process <time> as substring inside a string such as hello<time>world<time>!!!!.  and then replace <time> with seconds info.
+
+*****	The #include <filename> will output the file.  And it will do so recursively if the included file also #include <other file>.
+
+*****	Sends to standard error the name of each file and the last modified date/time as specified in the argument
+
+
+****************************************************************************************************************************************
+Basic structure:
+
+Functions to process input to output will do so as following:
+
+keep reading the line of each file until end of file or keep reading the line of standard input until ****  (^c or ^d is pressed)
+scan the first word of the first line in the file.
+and count how many byte of characters read.
+See if the word equals the key phrase "#include".
+if 
+equals to "#include", move the string pointer forward to how manycharacters read.
+read the following word followed by space and exclude <> symbols.
+calls the file to stdout function to process the file.
+
+else 
+just do the normal read process and search for substring "<time>" inside each word,
+if contains substring "<time>", it calls the replaceString() function to replace substring <time> with seconds.
+else just output the words and move the pointer forward
+*****************************************************************************************************************************************
+
+Main() function:
+
+At the main() function, we are using the getopt facility to support the use of options and with or without values or arguments.
+It's like a multiple choice by user to use this program to preprocess text document from the standard input from the console or from the filename(s) specified
+in the argument paremeters.  Also user is able to redirect the input from Standard in or from the File(s) to a specific filename followed by the "-f" option.
+
+Standard Input to standard output function():  stdin to stdout;
+
+Standard input to specific filename functon(): by using the freopen to redirect stdout to specific filename;
+
+Input filename output redirect to specific filename function():  
+by using the freopen() function: stdout to file; also calls the filename to to starndard output function() and then redirect store in file;
+
+
+Input filename to standard output function(): takes input from file, send to stdout;
+
+
+Replace String function(): using pointer and string class function to search substring and use the pointer arithmatic to put a new string together.
