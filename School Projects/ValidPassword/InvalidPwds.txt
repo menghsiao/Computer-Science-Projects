@@ -1,0 +1,7 @@
+Invalid password:  Laagomae78! <-- Must consists of only letters and digits; 
+Invalid password:  Laagomae897^^ <-- Must consists of only letters and digits; 
+Invalid password:  laagoma <-- Must Have at least eight characters; Must contain at least two digits; 
+Invalid password:  sdf <-- Must Have at least eight characters; Must contain at least two digits; 
+Invalid password:  sd <-- Must Have at least eight characters; Must contain at least two digits; 
+Invalid password:  d*dddddd <-- Must consists of only letters and digits; Must contain at least two digits; 
+Invalid password:  12345678! <-- Must consists of only letters and digits; 
