@@ -51,7 +51,6 @@ public class BinaryTreeComplete {
         int leaf = tree.countLeave(tree.root);
         System.out.println("num leave is " + leaf);
     }
-    
 }
 
 class BinaryTree {
@@ -62,15 +61,14 @@ class BinaryTree {
     }
     
     public int countNonLeave(Node node) {
-        
         if( node == null ) // empty tree
             return 0;
-               // is a leaf
+        
+        // is a leaf
         boolean leaves = node.left == null && node.right == null;
         if( leaves )
             return 0;
         
-
         return ( 1 + countNonLeave(node.left) + countNonLeave(node.right) );
         
     }
@@ -87,14 +85,12 @@ class BinaryTree {
     }
     
     public boolean isStrict(Node node) {
-        
         if(node == null)
             return false;
         boolean noChildren = node.left == null && node.right == null;
         boolean oneChildren = node.left != null || node.right != null;
         boolean twoChildren = node.left != null && node.right != null;
-        
-        
+
         if(noChildren) {
             return true;
         }
