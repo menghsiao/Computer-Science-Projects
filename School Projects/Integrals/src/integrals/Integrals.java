@@ -31,8 +31,7 @@ public class Integrals {
             System.out.println("File does not exist");
             System.exit(0);
         }
-        
-        
+
         File outFile = new File("answers.txt");
         PrintWriter output = new PrintWriter(outFile);
         
@@ -114,8 +113,7 @@ public class Integrals {
             
             // display the polynomial expression after antiderivative
             tree.inOrder(tree.root);
-            
-            
+
             // in case when the result is an 0 expression, print out zero
             // else print out the normal way
             if(isDefinite) {
@@ -152,12 +150,10 @@ public class Integrals {
         
         String[] token;
         int coef = 1, deg = 0;  // default values
-        
 
         if(term.contains("s")) {
             IntegralNode n = new IntegralNode(term, -20 - trigCounter);
             tree.insert(n);
-            
         }
         else {
             token = term.split("[x^]");
@@ -198,11 +194,9 @@ public class Integrals {
             if(isDefinite) {
                 value += n.getValue(upperLimit) - n.getValue(lowerLimit);
             }
-
         }
         
         return value;  // return value of each term passed into this function
     }  //  end of processEachTerm method
-    
     
 } //  end of class Integrals

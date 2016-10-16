@@ -23,7 +23,6 @@ public class IntegralNode implements Comparable<IntegralNode>{
     public IntegralNode() {
         left = right = null;
     }
-    
     // overloaded constructor
     public IntegralNode(int coef, int deg) {
         this.coef = coef;
@@ -104,7 +103,6 @@ public class IntegralNode implements Comparable<IntegralNode>{
                 if(token.length > 1) {
                     numBeforeX = Integer.parseInt(token[token.length - 1]);
                 }    
-            
             } 
             coefAnswer = (double) coef / numBeforeX;
             
@@ -145,11 +143,8 @@ public class IntegralNode implements Comparable<IntegralNode>{
             else
                 antiDerivative_String = sign + " " + antiDerivative_String + 
                         " " + "x";
-        
-        
         }
     }
-    
     // find the greatest common denominator
     private int gcd(int n, int d) {
         int n1 = Math.abs(n);
@@ -160,39 +155,31 @@ public class IntegralNode implements Comparable<IntegralNode>{
             if (n1 % i == 0 && n2 % i == 0)
                 gcd = i;
         }    
-        
         return gcd;
     }
-    
     public void setCoef(int coef) {
         this.coef = coef;
     }
-    
     public void setDegree(int deg) {
         this.deg = deg;
     }
-    
     public int getCoef() {
         return coef;
     }    
-    
     public int getDegree() {
         return deg;
     }
     public double getCoefAnswer() {
         return coefAnswer;
     }    
-    
     public int getDegreeAnswer() {
         return degAnswer;
     }
-    
     // combine terms with same degree together
     public void combineCoef(int new_Coef) {
         coef = coef + new_Coef;
         antiDerivative();
     }    
-    
     //  pass the x value into this function to find the value of the term
     //  this function will be called when this is an definite integral
     public double getValue(int xValue) {
@@ -201,21 +188,15 @@ public class IntegralNode implements Comparable<IntegralNode>{
             return coefAnswer * Math.log(xValue);
         else 
             return coefAnswer * Math.pow(xValue, degAnswer);
-            
- 
     }
-    
     @Override
     public int compareTo(IntegralNode n)
     {
         return this.deg - n.deg;
     }
-    
     @Override
     public String toString() {
 
         return antiDerivative_String;
     }
-    
-  
 }

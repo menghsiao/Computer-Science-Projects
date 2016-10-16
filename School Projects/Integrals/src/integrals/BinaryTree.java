@@ -32,7 +32,6 @@ public class BinaryTree {
         if (root == null)
             root = n;
         else {
-
             while(cur != null) {
                 if (n.compareTo(cur) > 0) {
                     parent = cur;
@@ -46,7 +45,6 @@ public class BinaryTree {
                     cur.combineCoef(n.getCoef());  // combine nodes
                     return false;  // new node didn't insert, only combine
                 }
-
             }  // end of while loop, found the parent node
             
             if (n.compareTo(parent) > 0) {
@@ -54,20 +52,17 @@ public class BinaryTree {
             }
             else
                 parent.left = n;
-            
         }
         size++;
         return true;  // new node inserted
     }
-    
-    
+
     // delete a node from the tree if needed
     public IntegralNode delete(IntegralNode n) 
             throws CloneNotSupportedException{
         IntegralNode parent = null;
         IntegralNode cur = root;
-        
-        
+
         while(cur != null) {
             
             if(n.compareTo(cur) < 0) {
@@ -80,7 +75,6 @@ public class BinaryTree {
             }
             else
                 break;  // find the node we want to delete
-            
         }
         
         if( cur == null)
@@ -99,10 +93,8 @@ public class BinaryTree {
                 else
                     parent.right = cur.right;
             }
-            
         }
         else {
-            
             // case 2: the cur has a left child.
             // Locate the rightmost node in the left subtree of
             // current node and also its parent.
@@ -113,7 +105,6 @@ public class BinaryTree {
             while(rightmost.right != null) {
                 parentOfRightmost = rightmost;
                 rightmost = rightmost.right; 
-                
             }
 
             // replace the element in current by the element in rightmost
@@ -121,7 +112,6 @@ public class BinaryTree {
             cur.setDegree(rightmost.getDegree());
             // call this function to update its antiderivative string
             cur.findAntiDerivative();
-
 
             //Eliminate rightmost node
             if(parentOfRightmost.right == rightmost) {
@@ -131,11 +121,8 @@ public class BinaryTree {
                 // when parentOfRightmost == current;
                 parentOfRightmost.left = rightmost.left;
         }
-        
-        
         size --;
         return cur;
-        
     }
     
     public IntegralNode getRoot() {
@@ -165,7 +152,6 @@ public class BinaryTree {
             else
                 return cur;
         }    
-        
         return null;
     }
     
@@ -193,14 +179,12 @@ public class BinaryTree {
             inOrderPrint(root.left);
             System.out.print(root.getDegree() + " ");
             inOrderPrint(root.right);
-            
         }  
     }
     
     // use the function to traverse the tree inOrder to put together
     // a string of all the node's string value in the tree
     public void inOrder(IntegralNode root) {
-
         if(root != null) {
             inOrder(root.left);
             
@@ -223,11 +207,9 @@ public class BinaryTree {
         }
         else
             return null;
-
        // return null;
     }
     public boolean isEmpty() {
         return ( root == null );
     }
-    
 }
